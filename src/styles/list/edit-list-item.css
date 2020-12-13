@@ -1,0 +1,127 @@
+.edit-list-item-mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
+
+.edit-list-item {
+  z-index: 6;
+  margin: 100px auto;
+  background-color: #FFFFFF;
+  color: #17252A;
+  min-height: 500px;
+  width: 400px;
+}
+
+.edit-list-item h2{
+  text-align: center;
+}
+
+.list-close-edit-item-button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.list-edit-new-item {
+  margin: 10px auto;
+  max-width: 90%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  border-radius: 5px;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.list-edit-new-item p {
+  color: #5c5c5c;
+}
+
+.list-edit-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.list-edit-item .list-edit-item-name{
+  display: block;
+  width: 98%;
+  height: 100px;
+  margin: 20px 0;
+  resize: none;
+}
+
+.list-edit-item select{
+  display: block;
+}
+
+
+.list-edit-item-name-div {
+  flex: 1 1 200px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.list-edit-item .list-edit-item-name-div label{
+  display: block;
+  text-align: left;
+}
+
+.list-edit-item-priority-div {
+  flex: 1 1 100%;
+  text-align: left;
+  padding: 0 0 50px 0;
+}
+
+.list-edit-item-priority {
+  margin: 0 20px;
+}
+
+.list-edit-item .list-edit-item-priority-div label{
+  display: block;
+  text-align: left;
+  padding: 20px;
+}
+
+.list-edit-item-button-div {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.list-edit-item-button-div button{
+  padding: 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  margin: 10px;
+}
+
+.list-update-item-button {
+  border: 2px solid #17252A!important;
+  color: #17252A!important;
+}
+
+.list-item-delete {
+  border: 2px solid #17252A!important;
+  color: #ff0000!important;
+}
+
+@media screen and (max-width: 500px) {
+  .edit-list-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    /* width: 100%; */
+    max-width: 85%;
+  }
+}

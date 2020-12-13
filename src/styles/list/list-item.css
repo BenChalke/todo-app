@@ -1,0 +1,100 @@
+.list-item {
+  background-color: #FFFFFF;
+  margin: 10px auto;
+  max-width: 90%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #17252A;
+  padding: 10px 0;
+  cursor: pointer;
+  border: 2px solid #FFFFFF;
+}
+
+.list-item.complete {
+  background-color: #c0c0c0;
+  border: none!important;
+}
+
+.list-item.priority-2{
+  border: 2px solid #ff7b00;
+}
+
+.list-item.priority-3{
+  border: 2px solid #ff0000;
+}
+
+.list-item-name {
+  flex: 1 1 200px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.list-item-priority-div {
+  flex: 1 1 120px;
+  max-width: 100px;
+}
+
+.list-item-priority-icon {
+  display: inline-block;
+}
+
+.list-item.priority-2 .list-item-priority-icon {
+  color: #ff7b00;
+}
+
+.list-item.priority-3 .list-item-priority-icon {
+  color: #ff0000;
+}
+
+.list-item-priority {
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.list-item-complete-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  flex: 0 1 50px;
+}
+
+.list-item-complete-btn:active {
+  border: none;
+}
+
+.list-item-complete-btn:focus {
+  border: none;
+  outline: none;
+}
+
+.list-item-complete-btn.uncomplete {
+  color: #b4b4b4;
+}
+
+.list-item-complete-btn.complete {
+  color: #56be00;
+}
+
+
+@media screen and (max-width: 500px) {
+  .list-item-priority-div {
+    text-align: right;
+    flex: 1 1 100%;
+    max-width: unset;
+  }
+  .list-item-name {
+    flex: 1 1 100px;
+    padding-left: 5px;
+  }
+  .list-item-complete-btn {
+    flex: 0 1 30px;
+  }
+}

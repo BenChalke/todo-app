@@ -1,0 +1,166 @@
+.list {
+  background-color: #DEF2F1;
+  min-height: calc(100vh - 112px);
+  margin: 0;
+  color: #17252A;
+}
+
+.list-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4% 20px;
+}
+
+.list-content {
+  background-color: #FFFFFF;
+  min-height: 700px;
+  padding-bottom: 20px;
+  margin: 0;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  border-radius: 5px;
+}
+
+.list-content-header {
+  margin: 0;
+  padding: 5px;
+  color: #FFFFFF;
+  background-color: #17252A;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.list-content-header h2 {
+  flex: 1 1 100%;
+  font-size: 30px;
+  margin: 10px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.list-content-sort {
+  flex: 1 1 200px;
+  padding: 10px;
+  text-align: left;
+}
+
+.list-content-sort p{
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.list-content-sort button{
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.list-content-sort button:focus{
+  outline: none;
+}
+
+.list-content-total p{
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.list-add-new-item {
+  background-color: #FFFFFF;
+  margin: 10px auto;
+  max-width: 90%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  border-radius: 5px;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.list-add-new-item p {
+  color: #5c5c5c;
+}
+
+.list-add-item {
+  background-color: #FFFFFF;
+  margin: 10px auto;
+  max-width: 90%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  box-shadow: 0px 0px 10px 0px rgba(84,84,84,0.4);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.list-add-item .list-add-item-name{
+  display: block;
+  width: 98%;
+  min-height: 50px;
+  margin: 20px 0;
+  resize: none;
+}
+
+.list-add-item select{
+  display: block;
+}
+
+
+.list-add-item-name-div {
+  flex: 1 1 200px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.list-add-item .list-add-item-name-div label{
+  display: block;
+  text-align: left;
+}
+
+.list-add-item-priority-div {
+  flex: 1 1 120px;
+  max-width: 100px;
+  text-align: center;
+}
+
+.list-add-item-priority {
+  margin: 20px auto;
+}
+
+.list-add-item .list-add-item-priority-div label{
+  display: block;
+  text-align: center;
+}
+
+.list-add-item-button-div {
+  flex: 1 1 100%;
+}
+
+.list-add-item-button {
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .list-content-sort {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}

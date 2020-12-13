@@ -1,0 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  position: relative;
+}
+
+.App {
+  text-align: center;
+}
